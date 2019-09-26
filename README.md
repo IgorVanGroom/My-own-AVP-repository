@@ -1,17 +1,22 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+    <head>
+        <title>AVPRG Aufgabe 2</title>
+    </head>
+    <body>
+        <script src="../../navigation.js" onload="init(2)"></script>
+        <div id="mainContainer">
+            <!-- Dies ist der Code für die Aufgabe -->
+            <h1>Please enter a midi note between 0 and 127 and get the corresponding frequency.</h1>
 
-<form>
-  First name:<br>
-  <input type="text" name="firstname"><br>
-  Last name:<br>
-  <input type="text" name="lastname">
-</form>
+            <input type="text" id="myMidiInput">
 
-</body>
+            <button type="button" id="myButton">Convert!</button>
+
+            <div id="outputText"></div>
+
+            <script src="convertScript.js"></script>
+            <!--------------------------------------->
+        </div>
+    </body>
 </html>
